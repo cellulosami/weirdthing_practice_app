@@ -1,0 +1,2 @@
+class Weirdthing < ApplicationRecord
+end
