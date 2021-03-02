@@ -18,4 +18,13 @@ class Api::WeirdthingsController < ApplicationController
     @weirdthing.save
     render 'show.json.jb'
   end
+
+  def update
+    @weirdthing = Weirdthing.find_by(id: params[:id])
+    @weirdthing.size = params[:size] || @weirdthing.size
+    @weirdthing.emotion = params[:emotion] || @weirdthing.emotion
+    @weirdthing.aura = params[:aura] || @weirdthing.aura
+    @weirdthing.save
+    render 'show.json.jb'
+  end
 end

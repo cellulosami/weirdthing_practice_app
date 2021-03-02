@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     get "/weirdthings" => "weirdthings#index"
     get "/weirdthings/:id" => "weirdthings#show"
     post "/weirdthings" => "weirdthings#create"
+    patch "/weirdthings/:id" => "weirdthings#update"
   end
 end
