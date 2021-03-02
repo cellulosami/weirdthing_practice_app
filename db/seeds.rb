@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+10.times do
+  weirdthing = Weirdthing.new(aura: Faker::FunnyName.name, size: Faker::Measurement.volume, emotion: Faker::Cannabis.strain)
+  weirdthing.save
+end
