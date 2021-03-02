@@ -27,4 +27,10 @@ class Api::WeirdthingsController < ApplicationController
     @weirdthing.save
     render 'show.json.jb'
   end
+
+  def destroy
+    @weirdthing = Weirdthing.find_by(id: params[:id])
+    @weirdthing.destroy
+    render json: {message: "The weirdthing has been disposed of."}
+  end
 end

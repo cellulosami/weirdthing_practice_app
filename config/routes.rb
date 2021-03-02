@@ -11,5 +11,6 @@ Rails.application.routes.draw do
     get "/weirdthings/:id" => "weirdthings#show"
     post "/weirdthings" => "weirdthings#create"
     patch "/weirdthings/:id" => "weirdthings#update"
+    delete "/weirdthings/:id" => "weirdthings#destroy"
   end
 end
