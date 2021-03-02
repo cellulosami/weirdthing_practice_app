@@ -1,5 +1,6 @@
 @weirdthings.map do |weirdthing|
   {
+    id: weirdthing[:id],
     size: weirdthing[:size],
     emotion: weirdthing[:emotion],
     aura: weirdthing[:emotion]
