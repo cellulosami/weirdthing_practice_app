@@ -1,0 +1,7 @@
+@weirdthings.map do |weirdthing|
+  {
+    size: weirdthing[:size],
+    emotion: weirdthing[:emotion],
+    aura: weirdthing[:emotion]
+  }
+end
